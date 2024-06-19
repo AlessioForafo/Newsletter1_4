@@ -65,3 +65,19 @@ Children:
        "highestIgnoredVersion": 0
       }
      }
+- Name: VariablesSimulator
+  Type: NetLogic
+  Children:
+  - Name: iSin
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: iCos
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: iRamp
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: bRunSimulation
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true

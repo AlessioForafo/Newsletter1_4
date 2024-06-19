@@ -5,6 +5,10 @@ using FTOptix.HMIProject;
 using UAManagedCore;
 using FTOptix.UI;
 using FTOptix.NetLogic;
+using FTOptix.Alarm;
+using FTOptix.DataLogger;
+using FTOptix.Store;
+using FTOptix.SQLiteStore;
 #endregion
 
 public class ClockLogic : BaseNetLogic

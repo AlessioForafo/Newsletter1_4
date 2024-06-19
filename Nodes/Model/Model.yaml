@@ -1,2 +1,50 @@
 Name: Model
 Type: ModelCategoryFolder
+Children:
+- Name: Alarms
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Span_KPI
+  Id: g=4853ef06a74d92d2bce585c14bbe7365
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 1
+- Name: Cos
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../NetLogic/VariablesSimulator/iCos"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Sin
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../NetLogic/VariablesSimulator/iSin"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Ramp
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../NetLogic/VariablesSimulator/iRamp"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
