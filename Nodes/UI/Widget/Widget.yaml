@@ -1,0 +1,186 @@
+Name: Widget
+Type: FolderType
+Children:
+- Name: ChangePageButton
+  Id: g=37f0fd4ce4a221f1def3ef8c9e3e65fe
+  Supertype: Button
+  ReferenceType: HasComponent
+  Children:
+  - Name: Text
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../PageToOpen@BrowseName"
+  - Name: VerticalAlignment
+    Type: BaseVariableType
+    DataType: VerticalAlignment
+    ModellingRule: Optional
+    Value: 3
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 70.0
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 150.0
+  - Name: BottomMargin
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 10.0
+  - Name: TopMargin
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 10.0
+  - Name: PageToOpen
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/Newsletter1_4/UI/Screens/GridLayout"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container/Panel/Screen"
+    - Name: NodeClass
+      Type: PropertyType
+      DataType: NodePointerNodeClass
+      ModellingRule: Optional
+      Value: 1
+  - Name: MouseClickEventHandler1
+    Type: EventHandler
+    Children:
+    - Name: ListenEventType
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+    - Name: MethodsToCall
+      Type: BaseObjectType
+      Children:
+      - Name: MethodContainer1
+        Type: BaseObjectType
+        Children:
+        - Name: ns=2;ObjectPointer
+          Type: NodePointer
+          DataType: NodeId
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{PanelLoaderMainWindow}@NodeId"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: ns=2;Method
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "ChangePanel"
+        - Name: InputArguments
+          Type: BaseObjectType
+          Children:
+          - Name: NewPanel
+            Type: BaseDataVariableType
+            DataType: NodeId
+            Description: {"NamespaceIndex":3,"TextId":"ChangePanelNewPanelDescription"}
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../PageToOpen@Pointer"
+          - Name: AliasNode
+            Type: BaseDataVariableType
+            DataType: NodeId
+            Description: {"NamespaceIndex":3,"TextId":"ChangePanelAliasNodeDescription"}
+            ValueRank: ScalarOrOneDimension
+    - Name: EventArguments
+      Type: MouseClickEvent
+      Children:
+      - Name: EventId
+        Type: PropertyType
+        DataType: ByteString
+      - Name: EventType
+        Type: PropertyType
+        DataType: NodeId
+      - Name: SourceNode
+        Type: PropertyType
+        DataType: NodeId
+      - Name: SourceName
+        Type: PropertyType
+        DataType: String
+      - Name: Time
+        Type: PropertyType
+        DataType: UtcTime
+      - Name: ReceiveTime
+        Type: PropertyType
+        DataType: UtcTime
+      - Name: Message
+        Type: PropertyType
+        DataType: LocalizedText
+      - Name: Severity
+        Type: PropertyType
+        DataType: UInt16
+  - Name: BackgroundColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#e4e4e4"
+    Children:
+    - Name: ConditionalConverter1
+      Type: ConditionalConverter
+      Children:
+      - Name: Condition
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ReferenceType: HasSource
+        Children:
+        - Name: ExpressionEvaluator1
+          Type: ExpressionEvaluator
+          Children:
+          - Name: Expression
+            Type: BaseDataVariableType
+            DataType: String
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: "{#PaginaCaricataDaPanelLoader} == {#NomePagina}"
+          - Name: ns=2;SourcePaginaCaricataDaPanelLoader
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{PanelLoaderMainWindow}/Panel@BrowseName"
+          - Name: ns=2;SourceNomePagina
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../PageToOpen@BrowseName"
+      - Name: TrueValue
+        Type: BaseDataVariableType
+        DataType: Color
+        ReferenceType: HasParameter
+        ModellingRule: Optional
+        Value: "#a8e2ff"
+      - Name: FalseValue
+        Type: BaseDataVariableType
+        DataType: Color
+        ReferenceType: HasParameter
+        ModellingRule: Optional
+        Value: "#f0f0f0"

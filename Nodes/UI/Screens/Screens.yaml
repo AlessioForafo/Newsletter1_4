@@ -1,0 +1,15 @@
+Name: Screens
+Type: ScreensCategoryFolder
+Children:
+- Name: ns=7;GridLayout
+  Id: g=9b13898a4e69569bc9b8b3f5aca9d77f
+  Supertype: Screen
+  ReferenceType: HasComponent
+- Name: Alarms
+  Id: g=14a1519ba0f16f5fb85847e707cbdf44
+  Supertype: Screen
+  ReferenceType: HasComponent
+- Name: SVG
+  Id: g=485dc1ad0dc7587b2c17ba9d2c4977e7
+  Supertype: Screen
+  ReferenceType: HasComponent
