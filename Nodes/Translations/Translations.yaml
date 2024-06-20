@@ -9,7 +9,7 @@ Children:
   Value: 
    {
     "Type": 12,
-    "Dimensions": [75,2],
+    "Dimensions": [81,2],
     "Body": [
      "","en-US",
      "AlarmStateInAlarmUnacked","Alarm State: In Alarm - Unacked",
@@ -85,6 +85,12 @@ Children:
      "Urgent","Urgent",
      "AlarmCountersInactiveAcked","Normal - Acked",
      "Suppressed","Suppressed",
-     "Shelved","Shelved"
+     "Shelved","Shelved",
+     "Timestamp","Timestamp",
+     "Acknowledge All","Acknowledge All",
+     "Active","Active",
+     "Confirm All","Confirm All",
+     "SourceName","Source Variable",
+     "Acked","Acked"
     ]
    }
