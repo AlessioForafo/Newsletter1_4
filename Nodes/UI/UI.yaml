@@ -183,6 +183,17 @@ Children:
     Children:
     - Name: Default
       Type: LabelStyle
+    - Name: Title
+      Type: LabelStyle
+      Children:
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 20.0
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        Value: 700
   - Name: RadioButtonStyles
     Type: BaseObjectType
     Children:
