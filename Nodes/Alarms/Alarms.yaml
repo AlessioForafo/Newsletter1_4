@@ -55,6 +55,16 @@ Children:
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"LocaleId":"en-US","Text":"Alarm bit 0"}
+  - Name: MaxTimeShelved
+    Id: g=e654be0f81616c7064e1950eca322571
+    Type: BaseDataVariableType
+    DataType: Duration
+    Value: "0:03:00:0.0000000"
+  - Name: PresetTimeShelved
+    Id: g=4d3582da7a3de2140b62bbf15f005d17
+    Type: BaseDataVariableType
+    DataType: Duration
+    Value: "0:00:01:0.0000000"
 - Name: DigitalAlarm2
   Id: g=f7749575915049a4178bad1e7fba894c
   Type: OffNormalAlarmController
