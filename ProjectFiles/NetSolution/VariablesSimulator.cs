@@ -8,6 +8,10 @@ using FTOptix.EventLogger;
 using FTOptix.Store;
 using FTOptix.DataLogger;
 using FTOptix.SQLiteStore;
+using FTOptix.MicroController;
+using FTOptix.CommunicationDriver;
+using FTOptix.TwinCAT;
+using FTOptix.CODESYS;
 #endregion
 
 public class VariablesSimulator : BaseNetLogic {

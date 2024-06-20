@@ -11,6 +11,10 @@ using FTOptix.Alarm;
 using FTOptix.DataLogger;
 using FTOptix.Store;
 using FTOptix.SQLiteStore;
+using FTOptix.MicroController;
+using FTOptix.CommunicationDriver;
+using FTOptix.TwinCAT;
+using FTOptix.CODESYS;
 #endregion
 
 public class FiltersLogic : BaseNetLogic
