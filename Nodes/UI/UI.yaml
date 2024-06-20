@@ -255,7 +255,7 @@ Children:
       DataType: NodePath
       Value: "/Objects/Newsletter1_4@BrowseName"
   - Name: LayoutMainWindow
-    Type: ns=3;GridLayout
+    Type: GridLayout
     Children:
     - Name: Width
       Type: BaseVariableType
@@ -709,7 +709,7 @@ Children:
         - Name: PageToOpen
           Type: NodePointer
           DataType: NodeId
-          Value: "/Objects/Newsletter1_4/UI/Screens/GridLayout"
+          Value: "/Objects/Newsletter1_4/UI/Screens/GridLayoutNew"
           Children:
           - Name: Kind
             Type: PropertyType

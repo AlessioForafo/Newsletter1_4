@@ -1,7 +1,7 @@
 Name: Screens
 Type: ScreensCategoryFolder
 Children:
-- Name: ns=7;GridLayout
+- Name: GridLayoutNew
   Id: g=9b13898a4e69569bc9b8b3f5aca9d77f
   Supertype: Screen
   ReferenceType: HasComponent
@@ -20,7 +20,7 @@ Children:
       ModellingRule: Optional
       Value: 300.0
     - Name: GridLayout1
-      Type: ns=3;GridLayout
+      Type: GridLayout
       Children:
       - Name: Width
         Type: BaseVariableType
