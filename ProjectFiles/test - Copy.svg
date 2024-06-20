@@ -1,0 +1,40 @@
+<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Rectangle with full opacity and solid stroke -->
+  <rect id="rect1" x="10" y="10" width="80" height="80" 
+        fill="blue" 
+        opacity="1" 
+        stroke="black" 
+        stroke-width="3" />
+  
+  <!-- Circle with partial opacity and dashed stroke -->
+  <circle id="circle1" cx="150" cy="50" r="40" 
+          fill="red" 
+          opacity="0.5" 
+          stroke="green" 
+          stroke-width="3" 
+          stroke-dasharray="5,5" />
+  
+  <!-- Ellipse with partial opacity and different dashed stroke pattern -->
+  <ellipse id="ellipse1" cx="250" cy="50" rx="40" ry="20" 
+           fill="yellow" 
+           opacity="0.7" 
+           stroke="purple" 
+           stroke-width="3" 
+           stroke-dasharray="10,5" />
+  
+  <!-- Line with partial opacity and dashed stroke -->
+  <line id="line1" x1="10" y1="150" x2="290" y2="150" 
+        stroke="orange" 
+        stroke-width="4" 
+        stroke-dasharray="15,5,5,5" 
+        opacity="0.6" />
+  
+  <!-- Text with full opacity -->
+  <text id="text1" x="10" y="190" 
+        font-family="Verdana" 
+        font-size="20" 
+        fill="black" 
+        opacity="1">
+    Sample SVG
+  </text>
+</svg>

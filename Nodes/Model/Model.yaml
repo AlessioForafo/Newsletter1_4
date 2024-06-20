@@ -48,3 +48,80 @@ Children:
       Type: BaseVariableType
       DataType: DynamicLinkMode
       Value: 2
+- Class: DataType
+  Name: SVGElements
+  Id: g=9fd854517851fda1b38b9f290544368e
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "SVGElements",
+    "DataType": {
+     "IdType": 2,
+     "Id": "9fd854517851fda1b38b9f290544368e",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 0,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "rect1"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "svg's rectangle"
+      }
+     },{
+      "Name": "Value1",
+      "Value": 1,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "circle1"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "svg's circle"
+      }
+     },{
+      "Name": "Value2",
+      "Value": 2,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "ellipse1"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "svg's ellipse"
+      }
+     },{
+      "Name": "Value3",
+      "Value": 3,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "line1"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "svg's line"
+      }
+     },{
+      "Name": "Value4",
+      "Value": 4,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "text1"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "svg's text"
+      }
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":"rect1"},"Description":{"LocaleId":"en-US","Text":"svg's rectangle"}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"circle1"},"Description":{"LocaleId":"en-US","Text":"svg's circle"}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"LocaleId":"en-US","Text":"ellipse1"},"Description":{"LocaleId":"en-US","Text":"svg's ellipse"}}},{"TypeId":{"Id":7594},"Body":{"Value":3,"DisplayName":{"LocaleId":"en-US","Text":"line1"},"Description":{"LocaleId":"en-US","Text":"svg's line"}}},{"TypeId":{"Id":7594},"Body":{"Value":4,"DisplayName":{"LocaleId":"en-US","Text":"text1"},"Description":{"LocaleId":"en-US","Text":"svg's text"}}}]
