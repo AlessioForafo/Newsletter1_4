@@ -836,6 +836,11 @@ Children:
           DataType: Size
           ModellingRule: Optional
           Value: -2.0
+      - Name: ContentAlignment
+        Type: BaseVariableType
+        DataType: ContentHorizontalAlignment
+        ModellingRule: Optional
+        Value: 1
   - Name: WidthChanged
     Type: VariableChangedEventDispatcher
     Children:
